@@ -1,25 +1,53 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+//@media only screen and (max-width : 1366px)
 
 /* Large Devices, Wide Screens */
+@media screen and (max-width: 1725px)
+  .about-me__content__row
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin: auto
+    &__text
+      padding: 0 90px
+      margin-left: 0
+      text-align: justify
+
 @media only screen and (max-width : 1200px)
+
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .about-me__content__row__text
+    padding: 0 50px
+  .about-me__content__row
+    img
+      width: 768px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .about-me__content__row__text
+    font-size: 14px!important
+    padding: 0 35px
+  .about-me__content__row
+    img
+      width: 480px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .about-me__content__row__text
+    font-size: 12px!important
+    padding: 0 20px
+  .about-me__content__row
+    img
+      width: 320px
+
 
 
 /* Custom, iPhone Retina */
